@@ -1,5 +1,11 @@
-mod day04;
+use std::time::Instant;
+
+mod day05;
 
 fn main() {
-    day04::solve();
+    let start = Instant::now();
+
+    day05::solve();
+
+    println!("Elapsed: {} μs", start.elapsed().as_micros());
 }
